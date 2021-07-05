@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta
-         name="viewport"
-         content="width=
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
          , initial-scale=1.0"
-         />
-      <link rel="stylesheet" href="./styles/index.css" type="text/css" />
-      <title>Survey Form</title>
-   </head>
-   <body>
-      <main>
-         <br />
-         <h1 id="title">Software Developer Survey</h1>
-         <br />
-         <p id="description">Great Place to Work is what we expect</p>
-         <!-- form area -->
-         <form id="survey-form">
-            <label id="name-label" for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required />
-            <label id="email-label" for="email">E-mail</label>
-            <input
-               type="email"
-               id="email"
-               placeholder="Enter your email"
-               required
-               />
-            <label id="age-label" for="age">Age (optional)</label>
-            <input type="number" id="age" placeholder="16.." max="100" min="16" />
-            <label id="dropdown-label" for="dropdown"
-               >What kind of changes you want to see on the company?
-            </label>
-            <!-- select area -->
-            <select id="dropdown" name="changes-to-company">
-               <option selected disabled>Choose</option>
-               <option name="comportamentals">Comportamentals</option>
-               <option name="culture">Culture</option>
-               <option name="overtimework">More money for work overtime</option>
-            </select>
-            <!-- radio check area-->
-            <p>What frameworks you want to use ?</p>
-            <div class="form-check-group">
-               <label for="React">
-                  <input
-                     id="React"
-                     type="checkbox"
-                     name="frameworks"
-                     value="React"
-                     class="input-checkbox"
-                     >
-                  <p>React</p>
-               </label>
-               <label for="Node">
-                  <input
-                     id="Node"
-                     type="checkbox"
-                     name="frameworks"
-                     value="Node"
-                     class="input-checkbox"
-                     />
-                  <p>Node</p>
-               </label>
-               <label for="Angular">
-                  <input
-                     id="Angular"
-                     type="checkbox"
-                     name="frameworks"
-                     value="Angular"
-                     class="input-checkbox"
-                     />
-                  <p>Angular</p>
-               </label>
-               <label for="Vue">
-               <input
-                  id="Vue"
-                  type="checkbox"
-                  name="frameworks"
-                  value="Vue"
-                  class="input-checkbox"
-                  />
-               <p>Vue</p>
-            </div>
-            <!-----***----->
-            <label label for="text-area"><p>Any suggestions?</p></label>
-            <textarea id="text-area" style="resize: none" rows="5" maxlength="255">
-              
-            </textarea>
+    />
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <div id="title-box">
+        <h1 id="title">Software Developer Survey</h1>
 
-            <button type="submit" value="Enviar">Submit</button>
-         </form>
-      </main>
-   </body>
+        <p id="description">Great Place to Work is what we expect</p>
+      </div>
+      <!-- form area -->
+
+      <form id="survey-form">
+        <label id="name-label" for="name"><p>Name</p></label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <label id="email-label" for="email"><p>E-mail</p></label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label id="age-label" for="age">
+          <p>Age (optional)</p>
+        </label>
+        <input type="number" id="age" placeholder="16.." max="100" min="16" />
+
+        <label id="dropdown-label" for="dropdown"
+          ><p>What kind of changes you want to see on the company?</p>
+        </label>
+        <!-- select area -->
+        <select id="dropdown" name="changes-to-company">
+          <option selected disabled>Choose</option>
+          <option name="comportamentals">Comportamentals</option>
+          <option name="culture">Culture</option>
+          <option name="overtimework">More money for work overtime</option>
+        </select>
+        <!-- radio check area-->
+        <p>What frameworks you want to use ?</p>
+        <div class="form-check-group">
+          <label for="React">
+            <input
+              id="React"
+              type="checkbox"
+              name="frameworks"
+              value="React"
+              class="input-checkbox"
+            />
+            <p>React</p>
+          </label>
+          <label for="Node">
+            <input
+              id="Node"
+              type="checkbox"
+              name="frameworks"
+              value="Node"
+              class="input-checkbox"
+            />
+            <p>Node</p>
+          </label>
+          <label for="Angular">
+            <input
+              id="Angular"
+              type="checkbox"
+              name="frameworks"
+              value="Angular"
+              class="input-checkbox"
+            />
+            <p>Angular</p>
+          </label>
+          <label for="Vue">
+            <input
+              id="Vue"
+              type="checkbox"
+              name="frameworks"
+              value="Vue"
+              class="input-checkbox"
+            />
+            <p>Vue</p>
+          </label>
+        </div>
+        <!----   -***----->
+        <label label for="text-area"><p>Any suggestions?</p></label>
+        <textarea id="text-area" rows="5" maxlength="255"> </textarea>
+
+        <button id="submit" type="submit" value="Enviar">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>
